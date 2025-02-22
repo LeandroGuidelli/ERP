@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(210, 228, 228);
+}
+
+header {
+    background-color: rgb(174, 199, 250);
+    padding: 10px 20px;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha logo e botão à esquerda */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.logo {
+    max-width: 50px; /* Limita o tamanho da logo */
+    margin-right: 10px; /* Espaço entre logo e botão */
+}
+
+.btn {
+    background-color: transparent; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.container {
+    padding: 20px;
+    background-color:  rgb(174, 199, 250);
+    margin: 10px;
+    width: 25%;
+    height: 83vh;
+}
+
+.title h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* Estiliza o grupo de cada input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo do label */
+label {
+    display: block; /* Faz o label ocupar toda a largura disponível */
+    font-weight: bold;
+    margin-bottom: 5px; /* Dá um espaçamento abaixo do label */
+}
+
+.footer {
+    background-color:rgb(174, 199, 250); /* Cor de fundo do rodapé */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 20px 20px; /* Espaçamento interno (padding) */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da tela */
+}
+
+.footer p {
+    margin: 0; /* Remove a margem do parágrafo */
+    font-size: 16px; /* Tamanho da fonte */
+}

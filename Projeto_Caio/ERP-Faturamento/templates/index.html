@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP-Faturamento</title>
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho ERP -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <img class="logo" src="/Imagem/Logo.png" alt="Logo">
+
+               <!-- Botão de salvar dentro do formulário -->
+               <form id="nfForm">
+                    <button class="btn" type="submit"><i class="fa fa-save"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Container ERP -->
+    <section class="container">
+        <div class="title">
+            <h1>Lançamentos de NF</h1>
+            <hr>
+    
+            <!-- Formulário para enviar dados para o Flask -->
+            <form action="/adicionar_nf" method="POST">
+                <div class="form-group">
+                    <label for="data">Data da NF</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="deposito">Depósito</label>
+                    <input type="text" id="deposito" name="deposito" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="numero_nf">Número NF</label>
+                    <input type="text" id="numero_nf" name="numero_nf" required>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+<footer class="footer">
+    <p id="saida_nf"><!--Saída de confirmação--></p>
+</footer>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
