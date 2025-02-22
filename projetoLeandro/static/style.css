@@ -1,0 +1,92 @@
+/* Estilo geral para o body */
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+/* Centralizar o conteúdo */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo da tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das células da tabela */
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Cor de fundo para cabeçalhos da tabela */
+table th {
+    background-color: #004ea0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o link */
+a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Estilo do formulário */
+form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos campos do formulário */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 323px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #004ea0;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 323px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #004186;
+}

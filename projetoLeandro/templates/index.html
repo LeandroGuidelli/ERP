@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Controle Financeiro</h1>
+    
+    <h2>Saldo: R$ {{ saldo }}</h2>
+
+    <h2>Transações:</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Descrição</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+            <th>Tipo</th>
+        </tr>
+        {% for transacao in transacoes %}
+        <tr>
+            <td>{{ transacao.id }}</td>
+            <td>{{ transacao.descricao }}</td>
+            <td>{{ transacao.produto }}</td>
+            <td>{{ transacao.quantidade }}</td>
+            <td>R$ {{ transacao.valor }}</td>
+            <td>{{ transacao.tipo }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{{ url_for('adicionar') }}" class="adicionar">Adicionar Nova Transação</a>
+</body>
+</html>
