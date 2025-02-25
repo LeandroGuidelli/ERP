@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Compras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ERP Compras - Estoque</h1>
+
+        <h2>Gerenciar Estoque</h2>
+        <input type="text" id="material" placeholder="Nome do Material">
+        <input type="number" id="quantidade" placeholder="Quantidade">
+        <button onclick="adicionarCompra()">Adicionar</button>
+        <button onclick="retirarEstoque()">Retirar</button>
+
+        <h2>Estoque Atual</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody id="estoqueTabela"></tbody>
+        </table>
+
+        <h2>Gráfico de Estoque</h2>
+        <canvas id="estoqueChart"></canvas>
+
+        <h2>Distribuição de Materiais</h2>
+        <canvas id="estoquePieChart"></canvas>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
